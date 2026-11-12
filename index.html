@@ -149,6 +149,28 @@ footer a{text-decoration:none;color:#fff}
   .barra-movil .ll{background:var(--osc)}.barra-movil .wa{background:var(--wa)}.barra-movil svg{width:20px;height:20px}
   body{padding-bottom:56px}}
 </style>
+<style id="mejora36">
+.reels-t{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 16px;scrollbar-width:thin}
+.reel36{flex:0 0 min(62vw,240px);scroll-snap-align:start;position:relative;margin:0;border-radius:18px;overflow:hidden;background:#000;aspect-ratio:9/16;box-shadow:0 18px 40px -22px rgba(0,0,0,.7)}
+.reel36 video{width:100%;height:100%;object-fit:cover;display:block}
+.reel36 figcaption{position:absolute;inset:auto 0 0 0;padding:40px 14px 14px;background:linear-gradient(transparent,rgba(0,0,0,.78));color:#fff;font-size:14px;line-height:1.3}
+.reel36 .vivo{position:absolute;top:12px;left:12px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:999px;background:rgba(255,255,255,.92);color:var(--osc)}
+.reel36 .vivo:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--pri);margin-right:6px;vertical-align:1px;animation:late 1.4s ease-in-out infinite}
+@keyframes late{50%{opacity:.25}}
+.ver-ig{display:inline-flex;margin-top:18px;color:var(--acento);font-weight:600;text-decoration:underline;text-underline-offset:4px}
+.gal{columns:2 160px;column-gap:12px}
+@media(min-width:760px){.gal{columns:4 200px}}
+.gal button{display:block;width:100%;margin:0 0 12px;padding:0;border:0;background:none;cursor:zoom-in;break-inside:avoid;border-radius:14px;overflow:hidden;position:relative}
+.gal img{width:100%;height:auto;display:block;transition:transform .5s ease,filter .5s ease}
+.gal button:hover img{transform:scale(1.05);filter:saturate(1.15)}
+.gal button:focus-visible{outline:3px solid var(--pri);outline-offset:2px}
+.visor{border:0;padding:0;background:transparent;max-width:min(92vw,560px);max-height:92vh}
+.visor::backdrop{background:rgba(0,0,0,.86)}
+.visor img{width:100%;height:auto;max-height:86vh;object-fit:contain;border-radius:14px;display:block}
+.visor form{position:absolute;top:8px;right:8px}
+.visor button{width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.92);font-size:22px;cursor:pointer}
+@media(prefers-reduced-motion:reduce){.gal img{transition:none}.reel36 .vivo:before{animation:none}}
+</style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -230,14 +252,18 @@ footer a{text-decoration:none;color:#fff}
   <div class="trabajos aparece"><img src="assets/t1.jpg" alt="Publicación de Sellyos Belleza" loading="lazy"><img src="assets/t2.jpg" alt="Publicación de Sellyos Belleza" loading="lazy"><img src="assets/t3.jpg" alt="Publicación de Sellyos Belleza" loading="lazy"><img src="assets/t4.jpg" alt="Publicación de Sellyos Belleza" loading="lazy"></div>
 </div></section>
 <section id="videos" class="oscuro"><div class="wrap">
-  <div class="cab aparece"><div><span class="ojo">Videos</span><h2>Míranos <em>en acción</em></h2></div><p>Videos publicados por el propio negocio en sus redes. Toca uno para verlo.</p></div>
-  <div class="videos aparece"><div class="vid emb" role="button" tabindex="0" data-v="https://www.instagram.com/reel/DN60jd_kwaK/embed/" aria-label="Ver video: ¿Cada cuánto deberías hacerte una limpieza…"><img src="assets/v1.jpg" alt="¿Cada cuánto deberías hacerte una limpieza…" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.500v15l12.500-7.500L7 4.500Z"/></svg></span><span class="t">¿Cada cuánto deberías hacerte una limpieza…</span></div><div class="vid emb" role="button" tabindex="0" data-v="https://www.instagram.com/reel/DdUt1ZUP5m6/embed/" aria-label="Ver video: Cuando decides el camino de convertirte en…"><img src="assets/v2.jpg" alt="Cuando decides el camino de convertirte en…" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.500v15l12.500-7.500L7 4.500Z"/></svg></span><span class="t">Cuando decides el camino de convertirte en…</span></div><div class="vid emb" role="button" tabindex="0" data-v="https://www.instagram.com/reel/DfdR1kdTnwR/embed/" aria-label="Ver video: Te harías una micropigmentación sabiendo que…"><img src="assets/v3.jpg" alt="Te harías una micropigmentación sabiendo que…" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.500v15l12.500-7.500L7 4.500Z"/></svg></span><span class="t">Te harías una micropigmentación sabiendo que…</span></div></div>
-  <div class="siguenos aparece"><a class="btn" href="https://www.instagram.com/sellyosbelleza/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ig"/></svg>Seguir en Instagram @sellyosbelleza</a></div>
+  <div class="cab aparece"><div><span class="ojo">Videos</span><h2>Míranos <em>en acción</em></h2></div><p>2 videos publicados por Sellyos Belleza en su Instagram. Desliza para ver más.</p></div>
+  <div class="reels-t aparece"><figure class="reel36"><span class="vivo">Video</span><video src="assets/r1.mp4" poster="assets/r1.jpg" muted loop playsinline preload="none" aria-label="✨ ¿Cada cuánto deberías hacerte una limpieza facial? La…"></video><figcaption>✨ ¿Cada cuánto deberías hacerte una limpieza facial? La…</figcaption></figure><figure class="reel36"><span class="vivo">Video</span><video src="assets/r2.mp4" poster="assets/r2.jpg" muted loop playsinline preload="none" aria-label="Cuando decides el camino de convertirte en una…"></video><figcaption>Cuando decides el camino de convertirte en una…</figcaption></figure></div>
+  <a class="ver-ig" href="https://www.instagram.com/sellyosbelleza/reels/" target="_blank" rel="noopener">Ver todos sus videos en Instagram</a>
 </div></section>
 <section class="gris"><div class="wrap">
   <div class="cab aparece"><div><span class="ojo">Lo que dicen</span><h2>Sus <em>clientes</em></h2></div><p>Opiniones publicadas en la ficha de Google del negocio.</p></div>
   <div class="resenas aparece"><div class="nota-g"><b>5,0</b><span class="est">★★★★★</span><span>23 reseñas en Google</span></div><figure class="res"><span class="est" aria-label="5 de 5 estrellas">★★★★★</span><p>«Una gran experiencia, Yoha es seca en todo lo que hace, me hice un tratamiento corporal y muy buenos resultados, y no falló mi cita cada dos meses para mí limpieza facial e hidratación 100%…»</p><cite>Shiolesky L., en Google</cite></figure><figure class="res"><span class="est" aria-label="5 de 5 estrellas">★★★★★</span><p>«Excelente la atención y servicios , me sentí muy cómoda y segura en mis tratamientos,  recomendadas»</p><cite>Pilar C., en Google</cite></figure><figure class="res"><span class="est" aria-label="5 de 5 estrellas">★★★★★</span><p>«Es un lujo, me eh hecho varios procedimiento y todos me encantan, cejas semi permanente pestañas y micro pigmentación de labios. Y quedo muy contenta con todo..»</p><cite>Queenny V., en Google</cite></figure></div>
 </div></section>
+<section id="galeria36"><div class="wrap">
+  <div class="cab aparece"><div><span class="ojo">Galería</span><h2>Más de <em>su trabajo</em></h2></div><p>Fotos publicadas en su Instagram, <a href="https://www.instagram.com/sellyosbelleza/" target="_blank" rel="noopener">@sellyosbelleza</a>. Toca una para verla en grande.</p></div>
+  <div class="gal aparece"><button type="button" data-src="assets/g01.jpg"><img src="assets/g01.jpg" width="360" height="640" alt="Publicación de Sellyos Belleza en Instagram" loading="lazy"></button><button type="button" data-src="assets/g02.jpg"><img src="assets/g02.jpg" width="360" height="640" alt="Publicación de Sellyos Belleza en Instagram" loading="lazy"></button><button type="button" data-src="assets/g03.jpg"><img src="assets/g03.jpg" width="360" height="640" alt="Publicación de Sellyos Belleza en Instagram" loading="lazy"></button><button type="button" data-src="assets/g04.jpg"><img src="assets/g04.jpg" width="360" height="640" alt="Publicación de Sellyos Belleza en Instagram" loading="lazy"></button><button type="button" data-src="assets/g05.jpg"><img src="assets/g05.jpg" width="512" height="640" alt="Publicación de Sellyos Belleza en Instagram" loading="lazy"></button><button type="button" data-src="assets/g06.jpg"><img src="assets/g06.jpg" width="360" height="640" alt="Publicación de Sellyos Belleza en Instagram" loading="lazy"></button><button type="button" data-src="assets/g07.jpg"><img src="assets/g07.jpg" width="361" height="640" alt="Publicación de Sellyos Belleza en Instagram" loading="lazy"></button><button type="button" data-src="assets/g08.jpg"><img src="assets/g08.jpg" width="360" height="640" alt="Publicación de Sellyos Belleza en Instagram" loading="lazy"></button><button type="button" data-src="assets/g09.jpg"><img src="assets/g09.jpg" width="361" height="640" alt="Publicación de Sellyos Belleza en Instagram" loading="lazy"></button><button type="button" data-src="assets/g10.jpg"><img src="assets/g10.jpg" width="360" height="640" alt="Publicación de Sellyos Belleza en Instagram" loading="lazy"></button><button type="button" data-src="assets/g11.jpg"><img src="assets/g11.jpg" width="360" height="640" alt="Publicación de Sellyos Belleza en Instagram" loading="lazy"></button><button type="button" data-src="assets/g12.jpg"><img src="assets/g12.jpg" width="361" height="640" alt="Publicación de Sellyos Belleza en Instagram" loading="lazy"></button></div>
+</div><dialog class="visor" id="visor36"><form method="dialog"><button aria-label="Cerrar">×</button></form><img alt=""></dialog></section>
 <section id="preguntas"><div class="wrap preguntas">
   <div class="lado aparece">
     <span class="ojo">Preguntas frecuentes</span>
@@ -319,5 +345,14 @@ footer a{text-decoration:none;color:#fff}
 if(L.getItem('soy-de-la-casa')||S.getItem('visita-contada'))return;S.setItem('visita-contada','1');
 var s=location.pathname.split('/').filter(Boolean)[0]||'',c=JSON.stringify({s:s});if(!s)return;
 if(navigator.sendBeacon)navigator.sendBeacon('https://n8n-production-003b9.up.railway.app/webhook/visita',c);else fetch('https://n8n-production-003b9.up.railway.app/webhook/visita',{method:'POST',body:c,keepalive:true});}catch(e){}})();</script>
+<script id="mejora36js">
+(function(){
+  var vs=document.querySelectorAll('.reel36 video');
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){if(v.preload==='none'){v.preload='auto';}var p=v.play();if(p&&p.catch)p.catch(function(){});}else{v.pause();}});},{threshold:.35});vs.forEach(function(v){io.observe(v);});}
+  var d=document.getElementById('visor36'),im=d&&d.querySelector('img');
+  document.querySelectorAll('.gal button').forEach(function(b){b.addEventListener('click',function(){if(!d||!d.showModal)return;im.src=b.dataset.src;im.alt=b.querySelector('img').alt;d.showModal();});});
+  if(d)d.addEventListener('click',function(e){if(e.target===d)d.close();});
+})();
+</script>
 </body>
 </html>
